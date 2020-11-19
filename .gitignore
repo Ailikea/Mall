@@ -1,0 +1,16 @@
+.gradle
+.idea
+build
+captures
+local.properties
+*.iml
+.gitignore
+.DS_Store
+localproject
+*.apk
+.gradle/
+.idea/workspace.xml
+app/build/
+app/app/
+build/
+/.idea
