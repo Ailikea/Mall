@@ -253,7 +253,9 @@
                     android:text="会员权益" />
             </LinearLayout>
 
-            <LinearLayout style="@style/style_personal_ll_weight">
+            <LinearLayout
+                android:id="@+id/ll_opinion"
+                style="@style/style_personal_ll_weight">
 
                 <ImageView
                     style="@style/style_personal_icon"

@@ -9,8 +9,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 
 import com.example.tesk.R;
 
@@ -18,22 +16,21 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
- * 用户中心
+ * 意见反馈
  */
-public class PersonalFragment extends Fragment {
+public class FeedbackFragment extends Fragment {
 
     private PersonalViewModel mViewModel;
 
-    public static PersonalFragment newInstance() {
-        return new PersonalFragment();
+    public static FeedbackFragment newInstance() {
+        return new FeedbackFragment();
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.personal_fragment, container, false);
-        ButterKnife.bind(this, view);
+        View view = inflater.inflate(R.layout.fragment_feedback, container, false);
         return view;
     }
 
@@ -44,13 +41,4 @@ public class PersonalFragment extends Fragment {
         // TODO: Use the ViewModel
     }
 
-    @OnClick({R.id.ll_opinion})
-    public void onViewClicked(View view) {
-        switch (view.getId()) {
-            case R.id.ll_opinion:
-                NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
-                navController.navigate(R.id.action_navigation_personal_to_feedbackFragment);
-                break;
-        }
-    }
 }
