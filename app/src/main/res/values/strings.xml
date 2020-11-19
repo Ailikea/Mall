@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">mall</string>
+    <string name="title_home">快乐商城</string>
+    <string name="title_dashboard">快乐视频</string>
+    <string name="title_notifications">快乐咨询</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="home_problem">货币转移</string>
+    <string name="home_notice">快乐逗明细</string>
+    <string name="home_record">兑现记录</string>
+    <string name="prompt_email">请输入您的登陆账号</string>
+    <string name="prompt_password">请输入您的登陆密码</string>
+    <string name="action_sign_in">登陆</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="im_system_msg">添加收货地址</string>
+    <string name="add_name">收货人</string>
+    <string name="bank_name">收货人姓名</string>
+    <string name="add_contacts">联系人</string>
+    <string name="add">所在地区</string>
+    <string name="add_consignee">收货联系人</string>
+    <string name="Submit">保存</string>
+    <string name="add_address">是否设置为默认地址</string>
+    <string name="delete">删除地址</string>
+    <string name="profit">提现</string>
+    <string name="login_tip_1">提现数量</string>
+    <string name="school">请输入您的提现数量</string>
+    <string name="Withdrawal">提现方式</string>
+    <string name="Invitation_code">姓名</string>
+    <string name="Invitation_code1">请输入您的姓名</string>
+
+</resources>
