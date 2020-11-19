@@ -22,4 +22,10 @@
         android:name="com.example.tesk.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_personal"
+        android:name="com.example.tesk.ui.personal.PersonalFragment"
+        android:label="@string/personal"
+        tools:layout="@layout/personal_fragment" />
 </navigation>

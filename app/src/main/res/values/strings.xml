@@ -30,5 +30,6 @@
     <string name="Withdrawal">提现方式</string>
     <string name="Invitation_code">姓名</string>
     <string name="Invitation_code1">请输入您的姓名</string>
+    <string name="personal">个人中心</string>
 
 </resources>

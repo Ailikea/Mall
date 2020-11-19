@@ -5,16 +5,341 @@
     android:id="@+id/personal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg"
     tools:context=".ui.personal.PersonalFragment">
 
-    <TextView
-        android:id="@+id/navigation_personal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="PersonalFragment"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/me"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="@dimen/page_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/img_touxiang"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="@dimen/ele_margin"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher_round"
+            app:riv_oval="true" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/img_touxiang"
+            android:text="JINO"
+            android:textColor="@color/textColor"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/man"
+            android:layout_toRightOf="@+id/tv_username"
+            android:layout_alignTop="@+id/tv_username"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="@dimen/ele_margin"/>
+
+        <TextView
+            android:id="@+id/tv_phoneno"
+            style="@style/style_personal_icon_tip_two"
+            android:layout_below="@+id/tv_username"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/img_touxiang"
+            android:text="手机号：13333333333" />
+
+        <TextView
+            android:id="@+id/tv_expire"
+            style="@style/style_personal_icon_tip_two"
+            android:layout_below="@+id/tv_phoneno"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/img_touxiang"
+            android:text="会员服务到期：2020/12/12" />
+
+        <ImageView
+            android:id="@+id/img_xiaoxi"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/xiaoxi" />
+
+        <ImageView
+            android:id="@+id/img_tuichu"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="@dimen/ele_margin"
+            android:layout_toLeftOf="@+id/img_xiaoxi"
+            android:src="@mipmap/tuichu" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_order"
+        style="@style/style_personal_ll_wrapper"
+        app:layout_constraintTop_toBottomOf="@+id/rl_userinfo">
+
+        <TextView
+            style="@style/style_personal_tv_title"
+            android:layout_marginBottom="@dimen/page_margin"
+            android:text="商城订单" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5">
+
+            <LinearLayout style="@style/style_personal_ll_weight">
+
+                <ImageView
+                    style="@style/style_personal_icon"
+                    android:src="@mipmap/qunabu" />
+
+                <TextView
+                    style="@style/style_personal_icon_tip"
+                    android:text="全部  " />
+            </LinearLayout>
+
+            <LinearLayout style="@style/style_personal_ll_weight">
+
+                <ImageView
+                    style="@style/style_personal_icon"
+                    android:src="@mipmap/daifukuan" />
+
+                <TextView
+                    style="@style/style_personal_icon_tip"
+                    android:text="待付款" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/style_personal_ll_weight">
+
+                <ImageView
+                    style="@style/style_personal_icon"
+                    android:src="@mipmap/daifahuo" />
+
+                <TextView
+                    style="@style/style_personal_icon_tip"
+                    android:text="待发货" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/style_personal_ll_weight">
+
+                <ImageView
+                    style="@style/style_personal_icon"
+                    android:src="@mipmap/daishouhuo" />
+
+                <TextView
+                    style="@style/style_personal_icon_tip"
+                    android:text="待收货" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/style_personal_ll_weight">
+
+                <ImageView
+                    style="@style/style_personal_icon"
+                    android:src="@mipmap/yiwancheng" />
+
+                <TextView
+                    style="@style/style_personal_icon_tip"
+                    android:text="已完成" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/page_margin"
+            android:paddingRight="@dimen/page_margin"
+            android:paddingTop="@dimen/page_margin">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="@drawable/bg_gray_circle"
+                android:layout_marginRight="20dp">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/kefu"
+                    android:layout_marginRight="@dimen/ele_margin"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="留言客服"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/fontFour"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="@drawable/bg_gray_circle">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/tixian"
+                    android:layout_marginRight="@dimen/ele_margin"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提现"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/fontFour"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/img_banner"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="@dimen/page_margin"
+        android:layout_marginTop="@dimen/ele_margin"
+        android:layout_marginRight="@dimen/page_margin"
+        android:scaleType="fitXY"
+        android:src="@mipmap/banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_order"
+        app:riv_corner_radius="@dimen/radius" />
+
+    <LinearLayout
+        android:id="@+id/ll_service"
+        style="@style/style_personal_ll_wrapper"
+        app:layout_constraintTop_toBottomOf="@+id/img_banner">
+
+        <TextView
+            style="@style/style_personal_tv_title"
+            android:layout_marginBottom="@dimen/page_margin"
+            android:text="我的服务" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4">
+
+            <LinearLayout style="@style/style_personal_ll_weight">
+
+                <ImageView
+                    style="@style/style_personal_icon"
+                    android:src="@mipmap/huiyuanquanyi" />
+
+                <TextView
+                    style="@style/style_personal_icon_tip"
+                    android:text="会员权益" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/style_personal_ll_weight">
+
+                <ImageView
+                    style="@style/style_personal_icon"
+                    android:src="@mipmap/yijianfankui" />
+
+                <TextView
+                    style="@style/style_personal_icon_tip"
+                    android:text="意见反馈" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/style_personal_ll_weight">
+
+                <ImageView
+                    style="@style/style_personal_icon"
+                    android:src="@mipmap/shouhuodizhi" />
+
+                <TextView
+                    style="@style/style_personal_icon_tip"
+                    android:text="收货地址" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/style_personal_ll_weight">
+
+                <ImageView
+                    style="@style/style_personal_icon"
+                    android:src="@mipmap/tuanduiguanli" />
+
+                <TextView
+                    style="@style/style_personal_icon_tip"
+                    android:text="团队管理" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/page_margin"
+            android:weightSum="4">
+
+            <LinearLayout style="@style/style_personal_ll_weight">
+
+                <ImageView
+                    style="@style/style_personal_icon"
+                    android:src="@mipmap/shoucang" />
+
+                <TextView
+                    style="@style/style_personal_icon_tip"
+                    android:text="收藏" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/style_personal_ll_weight">
+
+                <ImageView
+                    style="@style/style_personal_icon"
+                    android:src="@mipmap/fenxianglianjie" />
+
+                <TextView
+                    style="@style/style_personal_icon_tip"
+                    android:text="分享链接" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/style_personal_ll_weight">
+
+                <ImageView
+                    style="@style/style_personal_icon"
+                    android:src="@mipmap/fankuijilu" />
+
+                <TextView
+                    style="@style/style_personal_icon_tip"
+                    android:text="反馈记录" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/style_personal_ll_weight">
+
+                <ImageView
+                    style="@style/style_personal_icon"
+                    android:src="@mipmap/lianxikefu" />
+
+                <TextView
+                    style="@style/style_personal_icon_tip"
+                    android:text="联系客服" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

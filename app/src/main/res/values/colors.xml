@@ -14,4 +14,17 @@
     <color name="text_gray">#c8c8c8</color>
     <color name="gray3">#499BFD</color>
     <color name="Line">#DCDCDC</color>
+    <color name="bg">#F5F4F7</color>
+
+    <color name="colorPrimary">#F56456</color>
+    <color name="colorOne">#555555</color>
+    <color name="colorTwo">#666666</color>
+    <color name="colorThree">#999999</color>
+    <color name="colorFour">#B2B2B2</color>
+    <color name="colorFive">#B6B6B6</color>
+    <color name="colorSix">#BDBDBD</color>
+    <color name="colorSeven">#DDDDDD</color>
+    <color name="colorEight">#E5E5E5</color>
+    <color name="colorNine">#EEEEEE</color>
+    <color name="colorTen">#EEF2F3</color>
 </resources>

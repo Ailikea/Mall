@@ -45,4 +45,52 @@
         <item name="android:paddingRight">15dp</item>
     </style>
 
+    <style name="style_personal_tv_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/fontTwo</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="style_personal_icon">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="style_personal_icon_tip">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/fontFive</item>
+        <item name="android:textColor">@color/colorOne</item>
+    </style>
+
+    <style name="style_personal_icon_tip_two">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/fontFive</item>
+        <item name="android:textColor">@color/colorThree</item>
+    </style>
+
+    <style name="style_personal_ll_wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_white_radius</item>
+        <item name="android:layout_marginLeft">@dimen/page_margin</item>
+        <item name="android:layout_marginRight">@dimen/page_margin</item>
+        <item name="android:layout_marginTop">@dimen/ele_margin</item>
+        <item name="android:padding">@dimen/page_margin</item>
+        <item name="android:orientation">vertical</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+    </style>
+
+    <style name="style_personal_ll_weight">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+
 </resources>
