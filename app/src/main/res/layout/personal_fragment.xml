@@ -266,7 +266,9 @@
                     android:text="意见反馈" />
             </LinearLayout>
 
-            <LinearLayout style="@style/style_personal_ll_weight">
+            <LinearLayout
+                android:id="@+id/ll_address"
+                style="@style/style_personal_ll_weight">
 
                 <ImageView
                     style="@style/style_personal_icon"

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/style_input_wrapper">
+
+        <TextView
+            style="@style/style_tv_input_left"
+            android:text="收货人" />
+
+        <EditText
+            style="@style/style_tv_input_right"
+            android:hint="收货人姓名" />
+    </LinearLayout>
+
+    <View style="@style/style_line" />
+
+
+    <LinearLayout style="@style/style_input_wrapper">
+
+        <TextView
+            style="@style/style_tv_input_left"
+            android:text="联系人" />
+
+        <EditText
+            style="@style/style_tv_input_right"
+            android:hint="收货人手机号码" />
+    </LinearLayout>
+
+    <View style="@style/style_line" />
+
+    <LinearLayout style="@style/style_input_wrapper">
+
+        <TextView
+            style="@style/style_tv_input_left"
+            android:text="所在地区" />
+
+        <EditText
+            style="@style/style_tv_input_right"
+            android:layout_marginRight="@dimen/ele_margin"
+            android:enabled="false"
+            android:gravity="right|center_vertical"
+            android:hint="所在地区" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/icon_arrow_right" />
+    </LinearLayout>
+
+    <View style="@style/style_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/page_margin"
+        android:paddingRight="@dimen/page_margin">
+
+        <TextView
+            style="@style/style_tv_input_left"
+            android:text="详细地址"
+            android:paddingTop="@dimen/ele_margin"/>
+
+        <EditText
+            style="@style/style_tv_input_right"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:minLines="5"
+            android:gravity="left|top"
+            android:hint="详细地址：如道路、门牌号、小区、楼栋号、单元室等。"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/style_input_wrapper"
+        android:layout_marginTop="@dimen/ele_margin">
+
+        <TextView
+            style="@style/style_tv_input_left"
+            android:layout_weight="1"
+            android:text="是否设置为默认地址" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/style_input_wrapper"
+        android:layout_marginTop="@dimen/ele_margin">
+
+        <TextView
+            style="@style/style_tv_input_left"
+            android:text="删除地址"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/style_save_button"
+        android:layout_marginTop="50dp"
+        android:text="保存" />
+
+</LinearLayout>

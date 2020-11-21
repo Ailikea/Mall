@@ -44,12 +44,16 @@ public class PersonalFragment extends Fragment {
         // TODO: Use the ViewModel
     }
 
-    @OnClick({R.id.ll_opinion})
+    @OnClick({R.id.ll_opinion,R.id.ll_address})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.ll_opinion:
                 NavController navController = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
                 navController.navigate(R.id.action_navigation_personal_to_feedbackFragment);
+                break;
+            case R.id.ll_address:
+                NavController navController2 = Navigation.findNavController(getActivity(), R.id.nav_host_fragment);
+                navController2.navigate(R.id.action_navigation_personal_to_addressDetailFragment);
                 break;
         }
     }
